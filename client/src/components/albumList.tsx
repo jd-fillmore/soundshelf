@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+import { AlbumData } from "../types/types";
+import Album from "./album";
+
 const AlbumList = () => {
-  const [data, setData] = useState<any[]>([]);
+  const [data, setData] = useState<AlbumData[]>([]);
 
   const fetchData = async () => {
     const url = "http://localhost:3000/album";
@@ -19,20 +22,9 @@ const AlbumList = () => {
   }, []);
 
   return (
-    <div className="App">
-      {data.map(({ album_image, album_name, band_name, genre, status, year_listened }) => (
-        <>
-          <img src={album_image} alt={album_name} />
-          <h2>{band_name}</h2>
-          <p>
-            {album_name} | {genre}
-          </p>
-          <em>
-            {status} | {year_listened}
-          </em>
-        </>
-      ))}
-    </div>
+    <>
+      <Album data={data} />
+    </>
   );
 };
 
