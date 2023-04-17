@@ -1,25 +1,17 @@
-import { useState, useEffect } from "react";
+import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
-import { AlbumData } from "../types/types";
 import Album from "./album";
 
 const AlbumList = () => {
-  const [data, setData] = useState<AlbumData[]>([]);
+  const { isLoading, error, data } = useQuery({
+    queryKey: ["repoData"],
+    queryFn: () => axios.get("http://localhost:3000/album").then((res) => res.data.data),
+  });
 
-  const fetchData = async () => {
-    const url = "http://localhost:3000/album";
-    try {
-      const response = await axios.get(url);
-      setData(response.data.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  if (isLoading) return "Loading...";
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  if (error) return "An error has occurred.";
 
   return (
     <>
