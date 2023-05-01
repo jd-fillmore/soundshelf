@@ -1,4 +1,4 @@
-import { useState, useEffect, ChangeEvent } from "react";
+import { useState, ChangeEvent } from "react";
 import {
   useDisclosure,
   Button,
@@ -21,7 +21,7 @@ interface Inputs {
   album_name: string;
   genre: GenreEnum;
   status: StatusEnum;
-  yearListened: number;
+  yearListened: string;
 }
 
 enum GenreEnum {
@@ -47,9 +47,9 @@ const AddAlbum = () => {
     album_image: "",
     band_name: "",
     album_name: "",
-    genre: GenreEnum.ALTROCK,
+    genre: GenreEnum.POPPUNK,
     status: StatusEnum.WILL_LISTEN,
-    yearListened: 0,
+    yearListened: "",
   });
 
   const changeHandler = (event: ChangeEvent<HTMLSelectElement | HTMLInputElement>) => {
@@ -76,7 +76,7 @@ const AddAlbum = () => {
         album_name: "",
         genre: GenreEnum[genreOptions[0] as keyof typeof GenreEnum],
         status: StatusEnum[statusOptions[0] as keyof typeof StatusEnum],
-        yearListened: 0,
+        yearListened: "",
       });
       // onClose();
       window.location.assign("/");
@@ -87,7 +87,7 @@ const AddAlbum = () => {
 
   return (
     <>
-      <Button colorScheme="green" onClick={onOpen}>
+      <Button bg="#CCD5AE" color="#333" onClick={onOpen}>
         Add Album
       </Button>
 
