@@ -1,3 +1,4 @@
+import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { Container, Flex, Select, Input, Button, Box } from "@chakra-ui/react";
@@ -51,6 +52,7 @@ const AlbumList = () => {
             borderRadius="25px"
             bg="#f5f5f5"
             type="text"
+            role="textbox"
             placeholder="Search a musical act or album name..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
@@ -61,6 +63,7 @@ const AlbumList = () => {
           <Flex direction="row" justify="space-between">
             <Flex>
               <Select
+                id="genre"
                 borderRadius="25px"
                 placeholder="Genre"
                 value={selectedGenre}
@@ -80,6 +83,7 @@ const AlbumList = () => {
               </Select>
 
               <Select
+                id="status"
                 borderRadius="25px"
                 placeholder="Status"
                 value={selectedStatus}
@@ -90,11 +94,11 @@ const AlbumList = () => {
                 <option value="Listening">Listening</option>
                 <option value="Will Listen">Will Listen</option>
               </Select>
-              <Button width="150px" borderRadius="25px" onClick={() => clearFilters()}>
+              <Button id="clearBtn" width="150px" borderRadius="25px" onClick={() => clearFilters()}>
                 Clear
               </Button>
             </Flex>
-            <p>Total products: {filteredData.length}</p>
+            <p id="totalProd">Total products: {filteredData.length}</p>
           </Flex>
         </Box>
       </Container>
