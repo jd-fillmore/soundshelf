@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1683253413338" clover="3.2.0">
+  <project timestamp="1683253413338" name="All files">
+    <metrics statements="57" coveredstatements="35" conditionals="47" coveredconditionals="25" methods="23" coveredmethods="11" elements="127" coveredelements="71" complexity="0" loc="57" ncloc="57" packages="1" files="4" classes="4"/>
+    <file name="album.tsx" path="/Users/jarryd/Desktop/dev/soundshelf/client/src/components/album.tsx">
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="20" count="3" type="stmt"/>
+    </file>
+    <file name="albumList.tsx" path="/Users/jarryd/Desktop/dev/soundshelf/client/src/components/albumList.tsx">
+      <metrics statements="25" coveredstatements="16" conditionals="19" coveredconditionals="10" methods="10" coveredmethods="4"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+      <line num="20" count="3" type="stmt"/>
+      <line num="22" count="2" type="stmt"/>
+      <line num="25" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="27" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="30" count="3" type="cond" truecount="1" falsecount="2"/>
+      <line num="31" count="3" type="cond" truecount="1" falsecount="2"/>
+      <line num="33" count="3" type="cond" truecount="1" falsecount="2"/>
+      <line num="37" count="3" type="cond" truecount="3" falsecount="0"/>
+      <line num="40" count="1" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="42" count="0" type="stmt"/>
+      <line num="43" count="0" type="stmt"/>
+      <line num="44" count="0" type="stmt"/>
+      <line num="47" count="1" type="stmt"/>
+      <line num="58" count="0" type="stmt"/>
+      <line num="69" count="0" type="stmt"/>
+      <line num="71" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="72" count="0" type="stmt"/>
+      <line num="88" count="0" type="stmt"/>
+      <line num="95" count="0" type="stmt"/>
+    </file>
+    <file name="deleteAlbum.tsx" path="/Users/jarryd/Desktop/dev/soundshelf/client/src/components/deleteAlbum.tsx">
+      <metrics statements="10" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="13" count="0" type="stmt"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="15" count="0" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
+    </file>
+    <file name="editAlbum.tsx" path="/Users/jarryd/Desktop/dev/soundshelf/client/src/components/editAlbum.tsx">
+      <metrics statements="19" coveredstatements="12" conditionals="26" coveredconditionals="14" methods="7" coveredmethods="4"/>
+      <line num="49" count="1" type="stmt"/>
+      <line num="50" count="1" type="stmt"/>
+      <line num="52" count="1" type="stmt"/>
+      <line num="54" count="6" type="stmt"/>
+      <line num="56" count="3" type="stmt"/>
+      <line num="65" count="3" type="stmt"/>
+      <line num="66" count="0" type="stmt"/>
+      <line num="67" count="0" type="stmt"/>
+      <line num="73" count="3" type="stmt"/>
+      <line num="78" count="3" type="stmt"/>
+      <line num="80" count="3" type="stmt"/>
+      <line num="81" count="0" type="stmt"/>
+      <line num="82" count="0" type="stmt"/>
+      <line num="83" count="0" type="stmt"/>
+      <line num="92" count="0" type="stmt"/>
+      <line num="94" count="0" type="stmt"/>
+      <line num="98" count="3" type="stmt"/>
+      <line num="142" count="18" type="stmt"/>
+      <line num="155" count="9" type="stmt"/>
+    </file>
+  </project>
+</coverage>
