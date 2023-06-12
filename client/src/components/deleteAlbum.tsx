@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import React, { FC, useState } from "react";
 import { Button, Link } from "@chakra-ui/react";
 import axios from "axios";
 
