@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import { Container, Flex, Card, Heading, Box, Text } from "@chakra-ui/react";
 import { AlbumData } from "../types/types";
 import DeleteAlbum from "./deleteAlbum";
@@ -8,7 +8,7 @@ interface AlbumProps {
   data: AlbumData[];
 }
 
-const Album: FC<AlbumProps> = ({ data }) => {
+const Album: React.FC<AlbumProps> = ({ data }) => {
   return (
     <>
       <Container maxW="1140px">
