@@ -1,4 +1,4 @@
-import { FC, useState, ChangeEvent } from "react";
+import React, { FC, useState, ChangeEvent } from "react";
 import {
   useDisclosure,
   Button,
@@ -49,7 +49,7 @@ enum StatusEnum {
 const genreOptions = ["Pop-Punk", "Rap", "Metal", "Indie", "Alternative Rock", "Other"];
 const statusOptions = ["Will Listen", "Currently Listening", "Listened To"];
 
-const EditAlbum: FC<AlbumProps> = ({ id, data }) => {
+const EditAlbum: React.FC<AlbumProps> = ({ id, data }) => {
   // Find the album to be edited in the data array
   const albumToEdit = data.find((album) => album.id === id);
 
