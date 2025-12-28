@@ -1,17 +1,28 @@
-<img src="https://i.imgur.com/6l59MQL.jpg" alt="soundshelf logo"/>
+![SoundShelf Overview](https://i.imgur.com/SoyUAcP.png)
 
 # SoundShelf
-Music album listening tracker that lets users manage and track their album listening status.
+
+A full-stack music album organization and listening-status tracker designed to centralize your collection with fast search, clean filtering, and simple album management.
 
 ## Tech Stack
-React, Node.js, Express, PostgreSQL, SCSS
+- **Frontend**: React, TypeScript, Vite  
+- **UI Framework**: Chakra UI  
+- **State/Data**: TanStack Query, Axios  
+- **Backend**: Node.js, Express  
+- **Database**: PostgreSQL  
+- **Styling & Tooling**: SCSS, Jest
 
-## Features
-- Track album listening status (e.g., listened, in progress, want to listen)
-- Manage album collections with a full CRUD interface
-- Responsive design for desktop and mobile
+## Key Features
+- **Album CRUD** — Create, view, edit, and delete albums  
+- **Listening Status Tracking** — *Will Listen*, *Listening*, *Listened*  
+- **Fast Search** — Search by album name or artist  
+- **Advanced Filters** — Genre + status filtering  
+- **Responsive UI** — Clean and mobile-friendly  
+- **Optimized Data Fetching** — Caching and performance via TanStack Query
 
-## Demo
-https://github.com/jd-fillmore/soundshelf
-
-![SoundShelf Overview](https://i.imgur.com/SoyUAcP.png)
+## API Endpoints (Express)
+- **GET /album** — List all albums  
+- **GET /album/:id** — Get a single album  
+- **POST /album** — Create a new album  
+- **PUT /album/:id** — Update an album  
+- **DELETE /album/:id** — Delete an album  
